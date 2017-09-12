@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">datafromInternet</string>
     <string name="search">Search</string>
+    <string name="enter_a_query_then_click_searh">Enter a query then click searh</string>
+    <string name="click_search_and_your_url_will_show_up_here">Click Search and your URL will show up here</string>
+    <string name="make_a_search">Make a Search</string>
 </resources>
