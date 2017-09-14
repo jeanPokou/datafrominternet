@@ -15,12 +15,14 @@
         android:layout_height="wrap_content"
         android:hint="@string/enter_a_query_then_click_searh"
         android:textSize="22sp"
+        android:id="@+id/et_search_box"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/click_search_and_your_url_will_show_up_here"
+        android:id="@+id/tv_url_display"
        />
     <ScrollView
         android:layout_width="match_parent"

@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import com.slack.jeanpokou.datafrominternet.utilities.NetworkUtils
+import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity() {
@@ -19,10 +21,16 @@ class MainActivity : AppCompatActivity() {
         return  true
     }
 
-    override fun onContextItemSelected(item: MenuItem?): Boolean {
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+
+//        if(item!!.itemId == R.id.action_search){
+//            toast("Item  search clicked")
+//        }
         when(item!!.itemId) {
             R.id.action_search ->{
                toast("Item  search clicked")
+                 tv_url_display.text = NetworkUtils.buildUrl(et_search_box.text.toString()).toString()
+
             }
 
         }
