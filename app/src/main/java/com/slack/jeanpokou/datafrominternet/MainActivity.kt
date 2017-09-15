@@ -28,8 +28,12 @@ class MainActivity : AppCompatActivity() {
 //        }
         when(item!!.itemId) {
             R.id.action_search ->{
-               toast("Item  search clicked")
-                 tv_url_display.text = NetworkUtils.buildUrl(et_search_box.text.toString()).toString()
+                toast("Item  search clicked")
+
+                val url  =  NetworkUtils.buildUrl(et_search_box.text.toString())
+                tv_url_display.text =url.toString()
+                tv_github_search_results_json.text = NetworkUtils.getResponseFromHttpUrl(url)
+
 
             }
 

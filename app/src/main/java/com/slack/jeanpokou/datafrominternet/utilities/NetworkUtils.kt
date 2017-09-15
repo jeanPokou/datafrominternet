@@ -39,12 +39,12 @@ class NetworkUtils {
             } catch ( ex :MalformedURLException) {
                 ex.printStackTrace()
             }
-            return url;
+            return url
 
         }
 
-        fun getResponseFromHttpUrl( url : URL)  : String {
-            val connection = url.openConnection() as HttpURLConnection
+        fun getResponseFromHttpUrl( url : URL?)  : String {
+            val connection = url?.openConnection() as HttpURLConnection
              return connection.inputStream.bufferedReader().use {
                 it.readText()
             }
