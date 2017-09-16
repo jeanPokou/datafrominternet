@@ -24,6 +24,10 @@
         android:text="@string/click_search_and_your_url_will_show_up_here"
         android:id="@+id/tv_url_display"
        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,6 +41,29 @@
             android:textSize="18sp"
             />
 
+
     </ScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="22sp"
+            android:visibility="invisible"
+            android:id="@+id/tv_error_message_display"
+            android:text="@string/error"
+            />
+
+        <ProgressBar
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:id="@+id/pb_loading_indicator"
+            />
+
+
+
+    </FrameLayout>
 
 </LinearLayout>
